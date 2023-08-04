@@ -138,7 +138,7 @@ def giteaGetUser(username):
     if username in giteaGetUserCache:
         return giteaGetUserCache[username]
 
-    r = session.get(giteaHost('users/{0}'.format(username)))
+    r = session.get(giteaHost('users/{0}'.format(username)), verify=config['gitea']['ssl_verify'])
     if r.status_code != 200:
         return 'failed'
     giteaGetUserCache["{0}".format(username)] = json.loads(r.text)["id"]

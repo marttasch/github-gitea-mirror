@@ -11,7 +11,8 @@
 	"gist"                 : {
 	  "prefix" : "gist",
 	  "surfix" : ""
-	}
+	},
+  "ssl_verify"           : false
   },
   "repomap"          : { },
   "blacklist"        : [ ],
@@ -19,5 +20,12 @@
   "gistsStared"      : true,
   "repositoryStared" : true,
   "repositorySource" : true,
-  "repositoryForked" : true
+  "repositoryForked" : true,
+  "local_cache"      : {
+    "enabled" : true,
+    "file_path"   : "cache.json"
+  },
+  "ssl"              : {
+    "verify"  : false
+  }
 }
