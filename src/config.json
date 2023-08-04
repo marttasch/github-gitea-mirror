@@ -24,8 +24,5 @@
   "local_cache"      : {
     "enabled" : true,
     "file_path"   : "cache.json"
-  },
-  "ssl"              : {
-    "verify"  : false
   }
 }
